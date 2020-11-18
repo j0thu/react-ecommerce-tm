@@ -5,8 +5,7 @@ import Product from '../components/Product';
 import {Row, Col} from 'react-bootstrap';
 
 const HomeScreen = () => {
-    return (
-        <>
+    return <>
             <h1>Latest Products</h1>
             <Row>
                 {products.map(product=>(
@@ -16,7 +15,6 @@ const HomeScreen = () => {
                 ))}
             </Row>
         </>
-    )
 }
 
 export default HomeScreen;
