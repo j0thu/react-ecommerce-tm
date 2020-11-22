@@ -1,0 +1,29 @@
+{
+  "name": "ecommerce-tm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node backend/server",
+    "server":"nodemon backend/server",
+    "client":"npm start --prefix frontend",
+    "dev":"concurrently \"npm run server \" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j0thu/react-ecommerce-tm.git"
+  },
+  "author": "Jonathan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j0thu/react-ecommerce-tm/issues"
+  },
+  "homepage": "https://github.com/j0thu/react-ecommerce-tm#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}
