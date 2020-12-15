@@ -4,6 +4,7 @@ const notFound = ((req, res, next)=>{
     next(error);
 });
 
+//Handles all the errors
 const errorHandler  = ((err, req, res, next)=>{
     const statusCode = res.statusCode === 200 ? 500:res.statusCode;
     res.status(statusCode); //setting the status code, there are chances that errors can occur even with 200 status

@@ -3,14 +3,14 @@ import colors from 'colors';
 import dotenv from 'dotenv';
 dotenv.config();
 
+//DB Config
 import connectDB from './config/db.js';
 connectDB();
 
-import products from './data/products.js';
-
+// import products from './data/products.js';
 import productRoutes from './routes/productRoutes.js';
 
-//Middleware
+//Middlewares Import 
 import {notFound, errorHandler} from './middlewares/errorMiddleware.js';
 const app = express();
 
